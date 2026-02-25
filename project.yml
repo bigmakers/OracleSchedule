@@ -34,6 +34,7 @@ targets:
         SWIFT_EMIT_LOC_STRINGS: YES
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "日記に写真を追加するためにフォトライブラリにアクセスします"
         DEVELOPMENT_TEAM: "4666YH8WY2"
         CODE_SIGN_STYLE: Automatic
       configs:

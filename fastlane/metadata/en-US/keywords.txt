@@ -1,0 +1,1 @@
+tarot,oracle,schedule,diary,calendar,todo,task,fortune,arcana,planner

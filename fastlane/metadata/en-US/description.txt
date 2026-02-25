@@ -1,0 +1,21 @@
+Daily tarot readings, task management, and journaling — all in one app. Bring a touch of mystery to your everyday life.
+
+[One Oracle Tarot Reading]
+Draw one card from 22 Major Arcana for a simple yet powerful tarot reading. Receive today's message with a beautiful flip animation. Supports both upright and reversed positions.
+
+[TODO Management]
+Add tasks with due dates. Filter by complete or incomplete. Plus, a unique feature lets you divine the fortune of each individual task with tarot.
+
+[Diary]
+Record your daily moments. Attach photos. Protect your precious entries with a password lock that activates automatically when the app goes to background.
+
+[Calendar]
+Select dates on a monthly calendar. View that day's tarot reading and tasks at a glance.
+
+[Privacy]
+All data is stored only on your device. Nothing is ever sent to external servers. Your data belongs to you alone.
+
+[Languages]
+Supports Japanese and English. Easily switch in Settings.
+
+Free with no ads.

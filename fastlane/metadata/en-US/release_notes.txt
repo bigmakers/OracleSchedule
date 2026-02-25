@@ -1,0 +1,6 @@
+Initial release
+- One Oracle tarot reading (22 Major Arcana)
+- TODO management with per-task tarot fortune
+- Diary with photo attachments and password lock
+- Calendar view
+- Japanese and English support
