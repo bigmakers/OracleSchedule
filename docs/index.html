@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オラクルスケジュール - タロット占い × スケジュール × 日記</title>
+    <meta name="description" content="毎日のタロット占いと予定管理・日記を一つに。あなたの日々に小さな神秘を。">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --purple: #8B4FC8;
+            --purple-dark: #1a0d2e;
+            --purple-light: #a86de6;
+            --gold: #d4a843;
+            --bg: #0d0815;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+            color: #e8e0f0;
+            background: var(--bg);
+            overflow-x: hidden;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: radial-gradient(ellipse at 50% 30%, rgba(139, 79, 200, 0.15) 0%, transparent 60%),
+                        linear-gradient(180deg, var(--bg) 0%, #150e24 100%);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(139, 79, 200, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, var(--purple) 0%, #4a1a8a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56px;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 60px rgba(139, 79, 200, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #e8e0f0, var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: rgba(232, 224, 240, 0.6);
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--purple);
+            color: #fff;
+            padding: 1rem 2.5rem;
+            border-radius: 16px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 8px 32px rgba(139, 79, 200, 0.4);
+            position: relative;
+            z-index: 1;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(139, 79, 200, 0.5);
+        }
+
+        .download-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Features */
+        .features {
+            padding: 6rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: var(--gold);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(139, 79, 200, 0.08);
+            border: 1px solid rgba(139, 79, 200, 0.15);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(139, 79, 200, 0.3);
+            box-shadow: 0 12px 40px rgba(139, 79, 200, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #e8e0f0;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: rgba(232, 224, 240, 0.6);
+            line-height: 1.6;
+        }
+
+        /* Screenshots */
+        .screenshots {
+            padding: 4rem 2rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .screenshots h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--gold);
+        }
+
+        .screenshot-scroll {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .screenshot-placeholder {
+            width: 220px;
+            height: 440px;
+            border-radius: 24px;
+            background: linear-gradient(180deg, rgba(139, 79, 200, 0.15), rgba(139, 79, 200, 0.05));
+            border: 1px solid rgba(139, 79, 200, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(232, 224, 240, 0.3);
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        /* Details */
+        .details {
+            padding: 4rem 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .details h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--gold);
+        }
+
+        .detail-list {
+            list-style: none;
+        }
+
+        .detail-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(139, 79, 200, 0.1);
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .detail-list li span.icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .detail-list li .text strong {
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .detail-list li .text p {
+            font-size: 0.9rem;
+            color: rgba(232, 224, 240, 0.5);
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: radial-gradient(ellipse at 50% 50%, rgba(139, 79, 200, 0.1) 0%, transparent 60%);
+        }
+
+        .cta h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            color: rgba(232, 224, 240, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(232, 224, 240, 0.3);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(139, 79, 200, 0.1);
+        }
+
+        footer a {
+            color: var(--purple-light);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .screenshot-placeholder { width: 180px; height: 360px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="app-icon">🔮</div>
+    <h1>オラクルスケジュール</h1>
+    <p class="subtitle">タロット占い × スケジュール × 日記</p>
+    <a href="#" class="download-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store でダウンロード
+    </a>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <h2>3つの機能が、ひとつに。</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🃏</div>
+            <h3>ワンオラクル占い</h3>
+            <p>大アルカナ22枚からカードを1枚引く、シンプルなタロット占い。美しいフリップアニメーションと共に、今日のメッセージを受け取りましょう。</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">✅</div>
+            <h3>TODO管理</h3>
+            <p>日付指定でタスクを追加。未完了・完了でフィルタリング。さらに、各タスクを個別に占って運勢を確認できるユニークな機能付き。</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📔</div>
+            <h3>日記</h3>
+            <p>日々の出来事を記録。写真も添付可能。パスワードロックで大切な日記をしっかり守ります。</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3>カレンダー</h3>
+            <p>月間カレンダーで日付を選択。その日の占い結果とTODOを一覧で確認できます。</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>プライバシー保護</h3>
+            <p>日記にパスワードロックを設定可能。アプリがバックグラウンドに行くと自動的にロックされます。</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🌏</div>
+            <h3>日本語 / English</h3>
+            <p>設定から表示言語を切り替え可能。日本語と英語に対応しています。</p>
+        </div>
+    </div>
+</section>
+
+<!-- Screenshots -->
+<section class="screenshots">
+    <h2>スクリーンショット</h2>
+    <div class="screenshot-scroll">
+        <div class="screenshot-placeholder">カレンダー画面</div>
+        <div class="screenshot-placeholder">TODO画面</div>
+        <div class="screenshot-placeholder">日記画面</div>
+        <div class="screenshot-placeholder">カード占い画面</div>
+        <div class="screenshot-placeholder">設定画面</div>
+    </div>
+</section>
+
+<!-- Details -->
+<section class="details">
+    <h2>アプリの詳細</h2>
+    <ul class="detail-list">
+        <li>
+            <span class="icon">📱</span>
+            <div class="text">
+                <strong>対応デバイス</strong>
+                <p>iPhone（iOS 17.0以降）</p>
+            </div>
+        </li>
+        <li>
+            <span class="icon">💾</span>
+            <div class="text">
+                <strong>データ保存</strong>
+                <p>すべてのデータはデバイス内にのみ保存されます。外部サーバーへの送信はありません。</p>
+            </div>
+        </li>
+        <li>
+            <span class="icon">🎨</span>
+            <div class="text">
+                <strong>デザイン</strong>
+                <p>神秘的でありながら清潔感のある、モダンなUI。</p>
+            </div>
+        </li>
+        <li>
+            <span class="icon">💰</span>
+            <div class="text">
+                <strong>価格</strong>
+                <p>無料（広告なし）</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>毎日に、小さな神秘を。</h2>
+    <p>占い・予定・日記がひとつになったアプリで、あなたの日々をもっと豊かに。</p>
+    <a href="#" class="download-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store でダウンロード
+    </a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 オラクルスケジュール. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;">
+        <a href="privacy.html">プライバシーポリシー</a>
+    </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12E500AF68E64B7949D1466D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97A3D9075732B631922E687 /* SettingsView.swift */; };
+		172CB86AD2A653446F4B18CE /* DiaryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3A6B932E147321191CBD0 /* DiaryTabView.swift */; };
+		195DD3F0343B3756CD44CE3A /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EB053CE8CBFF628D10A03D /* DayDetailView.swift */; };
+		1E670F3435271AB736BD30B4 /* DiaryPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5569D9D762805C6EE2C09 /* DiaryPhotoPickerView.swift */; };
+		2C8D42767F4FD4E7EB48BEC6 /* DiaryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F1F75AE862E407E48866 /* DiaryEntry.swift */; };
+		335CB235D21924CC6AAFEFE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B197122C2AF4A23A32D858 /* ContentView.swift */; };
+		48E7B571659857EDEF30317F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DC74B6982FB877959B52A /* Strings.swift */; };
+		669DE8BC78E53667AC100939 /* CalendarTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C43991060C329A54DF3106 /* CalendarTabView.swift */; };
+		6B184F8D5D732CB7E0AFECDF /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91A9E0EE307FBCF803ABD0 /* MonthCalendarView.swift */; };
+		7441CE62EFACE8169EF35A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A3BAD820A5161AFC79392C /* Assets.xcassets */; };
+		7A6FFB7D1AE030D94D78EE60 /* OracleDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFF34FB2D5CF7E3779614AA /* OracleDiaryApp.swift */; };
+		A5DFEBA8BAE070FF521F64B3 /* TarotReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D981D128D5E44F29E4260248 /* TarotReading.swift */; };
+		A6F444D78A772FC17DE63B61 /* TodoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF962FEFABD6380F63FD59 /* TodoRowView.swift */; };
+		AA66646E7A110EFD4CF2F63A /* TaskTarotReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9783D21481BA1546A0BDA216 /* TaskTarotReading.swift */; };
+		AEF987D105D7F7F27ABB0762 /* TaskTarotResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE221141D2DDA75F714A028 /* TaskTarotResultView.swift */; };
+		B11C0C928F9EC291207376CD /* TarotCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65396A66C5615B8B7EDC8A /* TarotCardData.swift */; };
+		B6F22B2A78AB2CBA66F9C594 /* AddTodoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F856C7B179DA34C884479 /* AddTodoSheet.swift */; };
+		D30CA1A32DDACD68669EF2EF /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11686C168D6CB8A0D0E60D18 /* DateExtensions.swift */; };
+		D44E707F6114D2DB90E39070 /* DiaryPhotosGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C84C9A1241BED82B81F6D /* DiaryPhotosGridView.swift */; };
+		D69787401C905ADBCFE3FD10 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB0743BAD7EB3774DEAD3C3 /* TodoListView.swift */; };
+		DB5B4FB3960963284E364965 /* TaskTarotReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45FE76594A6B80F58B4012 /* TaskTarotReadingView.swift */; };
+		F29D627CB7927BE9337F1329 /* LanguageSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742AFE26D7E2ADDD8F04FF0 /* LanguageSettingsView.swift */; };
+		F51A2FEA1D371A74C52A4F4C /* TarotReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE02015CAFD74A7308E641C /* TarotReadingView.swift */; };
+		F9D84400BB0DC69648863C6C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB494A3E3F08BDD5B8E05B80 /* TaskItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06C43991060C329A54DF3106 /* CalendarTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTabView.swift; sourceTree = "<group>"; };
+		0742AFE26D7E2ADDD8F04FF0 /* LanguageSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingsView.swift; sourceTree = "<group>"; };
+		0BE221141D2DDA75F714A028 /* TaskTarotResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTarotResultView.swift; sourceTree = "<group>"; };
+		11686C168D6CB8A0D0E60D18 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		11A3BAD820A5161AFC79392C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B45FE76594A6B80F58B4012 /* TaskTarotReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTarotReadingView.swift; sourceTree = "<group>"; };
+		1B65396A66C5615B8B7EDC8A /* TarotCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardData.swift; sourceTree = "<group>"; };
+		236C84C9A1241BED82B81F6D /* DiaryPhotosGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPhotosGridView.swift; sourceTree = "<group>"; };
+		51AF962FEFABD6380F63FD59 /* TodoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRowView.swift; sourceTree = "<group>"; };
+		53E5569D9D762805C6EE2C09 /* DiaryPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPhotoPickerView.swift; sourceTree = "<group>"; };
+		7AFF34FB2D5CF7E3779614AA /* OracleDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleDiaryApp.swift; sourceTree = "<group>"; };
+		7EA3A6B932E147321191CBD0 /* DiaryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTabView.swift; sourceTree = "<group>"; };
+		80EB053CE8CBFF628D10A03D /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
+		842F856C7B179DA34C884479 /* AddTodoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoSheet.swift; sourceTree = "<group>"; };
+		9783D21481BA1546A0BDA216 /* TaskTarotReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTarotReading.swift; sourceTree = "<group>"; };
+		B8B197122C2AF4A23A32D858 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE9DC74B6982FB877959B52A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CD2F39D76E28BC9827567030 /* OracleDiary.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = OracleDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D180F1F75AE862E407E48866 /* DiaryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntry.swift; sourceTree = "<group>"; };
+		D981D128D5E44F29E4260248 /* TarotReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotReading.swift; sourceTree = "<group>"; };
+		DBE02015CAFD74A7308E641C /* TarotReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotReadingView.swift; sourceTree = "<group>"; };
+		EB494A3E3F08BDD5B8E05B80 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		F97A3D9075732B631922E687 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FEB0743BAD7EB3774DEAD3C3 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		FF91A9E0EE307FBCF803ABD0 /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		005DABC779B413B0A7F35BB3 /* Tarot */ = {
+			isa = PBXGroup;
+			children = (
+				DBE02015CAFD74A7308E641C /* TarotReadingView.swift */,
+			);
+			path = Tarot;
+			sourceTree = "<group>";
+		};
+		050C0526F830F4FC2F91D996 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0908C2069B695E8C724BC3C8 /* Calendar */,
+				FE01F3839DB72F37A3C63381 /* Diary */,
+				3E6D3214A46D49937EECD6D0 /* Settings */,
+				005DABC779B413B0A7F35BB3 /* Tarot */,
+				6A9B9EE0B4447BD1EBA3DBA3 /* Todo */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0908C2069B695E8C724BC3C8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				06C43991060C329A54DF3106 /* CalendarTabView.swift */,
+				80EB053CE8CBFF628D10A03D /* DayDetailView.swift */,
+				FF91A9E0EE307FBCF803ABD0 /* MonthCalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		1CA32E92979604A18242712E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D180F1F75AE862E407E48866 /* DiaryEntry.swift */,
+				D981D128D5E44F29E4260248 /* TarotReading.swift */,
+				EB494A3E3F08BDD5B8E05B80 /* TaskItem.swift */,
+				9783D21481BA1546A0BDA216 /* TaskTarotReading.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FE601BDB04BDB01BB2333FE = {
+			isa = PBXGroup;
+			children = (
+				3B1674C6A391A98519B985B9 /* OracleDiary */,
+				3E381AFC142023C3A7BC28B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B1674C6A391A98519B985B9 /* OracleDiary */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8D6F5ACEA353AC714C2A7 /* Data */,
+				1CA32E92979604A18242712E /* Models */,
+				3B8027C8B2FE5DC78FB70D5A /* Utilities */,
+				050C0526F830F4FC2F91D996 /* Views */,
+				11A3BAD820A5161AFC79392C /* Assets.xcassets */,
+				B8B197122C2AF4A23A32D858 /* ContentView.swift */,
+				7AFF34FB2D5CF7E3779614AA /* OracleDiaryApp.swift */,
+			);
+			path = OracleDiary;
+			sourceTree = "<group>";
+		};
+		3B8027C8B2FE5DC78FB70D5A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				11686C168D6CB8A0D0E60D18 /* DateExtensions.swift */,
+				BE9DC74B6982FB877959B52A /* Strings.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3E381AFC142023C3A7BC28B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F39D76E28BC9827567030 /* OracleDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E6D3214A46D49937EECD6D0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0742AFE26D7E2ADDD8F04FF0 /* LanguageSettingsView.swift */,
+				F97A3D9075732B631922E687 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6A9B9EE0B4447BD1EBA3DBA3 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				842F856C7B179DA34C884479 /* AddTodoSheet.swift */,
+				1B45FE76594A6B80F58B4012 /* TaskTarotReadingView.swift */,
+				0BE221141D2DDA75F714A028 /* TaskTarotResultView.swift */,
+				FEB0743BAD7EB3774DEAD3C3 /* TodoListView.swift */,
+				51AF962FEFABD6380F63FD59 /* TodoRowView.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		9DB8D6F5ACEA353AC714C2A7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1B65396A66C5615B8B7EDC8A /* TarotCardData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FE01F3839DB72F37A3C63381 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				53E5569D9D762805C6EE2C09 /* DiaryPhotoPickerView.swift */,
+				236C84C9A1241BED82B81F6D /* DiaryPhotosGridView.swift */,
+				7EA3A6B932E147321191CBD0 /* DiaryTabView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67B34B359F52474ABB02F927 /* OracleDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B63EC5C8966FCA88FA49BE09 /* Build configuration list for PBXNativeTarget "OracleDiary" */;
+			buildPhases = (
+				3A7213BAA2063706A77E256D /* Sources */,
+				0C0CBF5791CC2E03928B4301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OracleDiary;
+			packageProductDependencies = (
+			);
+			productName = OracleDiary;
+			productReference = CD2F39D76E28BC9827567030 /* OracleDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EDFBA1D839865578C6BE70A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					67B34B359F52474ABB02F927 = {
+						DevelopmentTeam = 4666YH8WY2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 30D73B2E28DC3F4A54705F6F /* Build configuration list for PBXProject "OracleDiary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1FE601BDB04BDB01BB2333FE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67B34B359F52474ABB02F927 /* OracleDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C0CBF5791CC2E03928B4301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441CE62EFACE8169EF35A10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A7213BAA2063706A77E256D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F22B2A78AB2CBA66F9C594 /* AddTodoSheet.swift in Sources */,
+				669DE8BC78E53667AC100939 /* CalendarTabView.swift in Sources */,
+				335CB235D21924CC6AAFEFE5 /* ContentView.swift in Sources */,
+				D30CA1A32DDACD68669EF2EF /* DateExtensions.swift in Sources */,
+				195DD3F0343B3756CD44CE3A /* DayDetailView.swift in Sources */,
+				2C8D42767F4FD4E7EB48BEC6 /* DiaryEntry.swift in Sources */,
+				1E670F3435271AB736BD30B4 /* DiaryPhotoPickerView.swift in Sources */,
+				D44E707F6114D2DB90E39070 /* DiaryPhotosGridView.swift in Sources */,
+				172CB86AD2A653446F4B18CE /* DiaryTabView.swift in Sources */,
+				F29D627CB7927BE9337F1329 /* LanguageSettingsView.swift in Sources */,
+				6B184F8D5D732CB7E0AFECDF /* MonthCalendarView.swift in Sources */,
+				7A6FFB7D1AE030D94D78EE60 /* OracleDiaryApp.swift in Sources */,
+				12E500AF68E64B7949D1466D /* SettingsView.swift in Sources */,
+				48E7B571659857EDEF30317F /* Strings.swift in Sources */,
+				B11C0C928F9EC291207376CD /* TarotCardData.swift in Sources */,
+				A5DFEBA8BAE070FF521F64B3 /* TarotReading.swift in Sources */,
+				F51A2FEA1D371A74C52A4F4C /* TarotReadingView.swift in Sources */,
+				F9D84400BB0DC69648863C6C /* TaskItem.swift in Sources */,
+				AA66646E7A110EFD4CF2F63A /* TaskTarotReading.swift in Sources */,
+				DB5B4FB3960963284E364965 /* TaskTarotReadingView.swift in Sources */,
+				AEF987D105D7F7F27ABB0762 /* TaskTarotResultView.swift in Sources */,
+				D69787401C905ADBCFE3FD10 /* TodoListView.swift in Sources */,
+				A6F444D78A772FC17DE63B61 /* TodoRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		548F77372AFCF0B6AA9E39F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4666YH8WY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "オラクルスケジュール";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oraclediary.app;
+				PRODUCT_NAME = OracleDiary;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		689D1E749D7967E5DBA9F8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AEBDCE32F9D86A0A7EF7099A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F38B4609F92A8C7AD26CD937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4666YH8WY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "オラクルスケジュール";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oraclediary.app;
+				PRODUCT_NAME = OracleDiary;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30D73B2E28DC3F4A54705F6F /* Build configuration list for PBXProject "OracleDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEBDCE32F9D86A0A7EF7099A /* Debug */,
+				689D1E749D7967E5DBA9F8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B63EC5C8966FCA88FA49BE09 /* Build configuration list for PBXNativeTarget "OracleDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548F77372AFCF0B6AA9E39F3 /* Debug */,
+				F38B4609F92A8C7AD26CD937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EDFBA1D839865578C6BE70A /* Project object */;
+}
