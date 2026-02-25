@@ -1,0 +1,58 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "ビルドしてApp Store Connectにアップロード"
+  lane :release do
+    build_app(
+      scheme: "OracleDiary",
+      export_method: "app-store",
+      export_options: {
+        provisioningProfiles: {
+          "com.oraclediary.app" => "OracleDiary AppStore"
+        }
+      },
+      clean: true,
+      output_directory: "./build",
+      output_name: "OracleDiary.ipa"
+    )
+
+    upload_to_app_store(
+      skip_metadata: false,
+      skip_screenshots: true,
+      force: true,
+      precheck_include_in_app_purchases: false
+    )
+  end
+
+  desc "ビルドしてTestFlightにアップロード"
+  lane :beta do
+    increment_build_number
+    build_app(
+      scheme: "OracleDiary",
+      export_method: "app-store",
+      export_options: {
+        provisioningProfiles: {
+          "com.oraclediary.app" => "OracleDiary AppStore"
+        }
+      },
+      clean: true,
+      output_directory: "./build",
+      output_name: "OracleDiary.ipa"
+    )
+
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+  end
+
+  desc "ビルドのみ（アップロードなし）"
+  lane :build_only do
+    build_app(
+      scheme: "OracleDiary",
+      export_method: "app-store",
+      clean: true,
+      output_directory: "./build",
+      output_name: "OracleDiary.ipa"
+    )
+  end
+end

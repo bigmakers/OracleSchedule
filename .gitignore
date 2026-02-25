@@ -8,5 +8,16 @@ xcuserdata/
 # macOS
 .DS_Store
 
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Ruby
+vendor/bundle
+.bundle
+Gemfile.lock
+
 # Claude
 .claude/

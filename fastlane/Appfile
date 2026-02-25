@@ -1,0 +1,6 @@
+app_identifier("com.oraclediary.app")
+team_id("4666YH8WY2")
+
+# App Store Connect
+# apple_id("your-apple-id@example.com")
+# itc_team_id("YOUR_ITC_TEAM_ID")
