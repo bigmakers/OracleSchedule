@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4666YH8WY2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "オラクルスケジュール";
+				INFOPLIST_KEY_CFBundleDisplayName = "オラクルTODO";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "日記に写真を追加するためにフォトライブラリにアクセスします";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -441,7 +441,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4666YH8WY2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "オラクルスケジュール";
+				INFOPLIST_KEY_CFBundleDisplayName = "オラクルTODO";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "日記に写真を追加するためにフォトライブラリにアクセスします";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
