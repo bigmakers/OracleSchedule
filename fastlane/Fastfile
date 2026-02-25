@@ -1,8 +1,21 @@
 default_platform(:ios)
 
 platform :ios do
+  desc "App Store Connect API Keyの設定（CI環境用）"
+  private_lane :setup_api_key do
+    if ENV["APP_STORE_CONNECT_API_KEY_ID"]
+      app_store_connect_api_key(
+        key_id: ENV["APP_STORE_CONNECT_API_KEY_ID"],
+        issuer_id: ENV["APP_STORE_CONNECT_API_ISSUER_ID"],
+        key_filepath: File.expand_path("~/.appstoreconnect/private_keys/AuthKey_#{ENV['APP_STORE_CONNECT_API_KEY_ID']}.p8"),
+        in_house: false
+      )
+    end
+  end
+
   desc "ビルドしてApp Store Connectにアップロード"
   lane :release do
+    setup_api_key
     build_app(
       scheme: "OracleDiary",
       export_method: "app-store",
@@ -26,7 +39,10 @@ platform :ios do
 
   desc "ビルドしてTestFlightにアップロード"
   lane :beta do
-    increment_build_number
+    setup_api_key
+    increment_build_number(
+      xcodeproj: "OracleDiary.xcodeproj"
+    )
     build_app(
       scheme: "OracleDiary",
       export_method: "app-store",

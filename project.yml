@@ -36,4 +36,8 @@ targets:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         DEVELOPMENT_TEAM: "4666YH8WY2"
         CODE_SIGN_STYLE: Automatic
-        CODE_SIGN_IDENTITY: "Apple Development"
+      configs:
+        Debug:
+          CODE_SIGN_IDENTITY: "Apple Development"
+        Release:
+          CODE_SIGN_IDENTITY: "Apple Distribution"
